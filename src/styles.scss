@@ -4,12 +4,17 @@
 
 @font-face {
   font-family: "Satoshi";
-  src: url('./app/assets/fonts/Satoshi_Complete/Fonts/TTF/Satoshi-Variable.ttf');
+  src: url('./assets/fonts/Satoshi_Complete/Fonts/TTF/Satoshi-Variable.ttf');
 }
 
 @font-face {
   font-family: "Clash";
-  src: url('./app/assets/fonts/NibPro-Regular.ttf');
+  src: url('./assets/fonts/NibPro-Regular.ttf');
+}
+
+@font-face {
+  font-family: "clasher";
+  src: url('./assets/fonts/ClashGrotesk_Complete/Fonts/TTF/ClashGrotesk-Variable.ttf');
 }
 
 *{
@@ -31,6 +36,10 @@ body{
 
 .hero_header{
   font-family: "Clash", sans-serif;
+}
+
+.nav_header{
+  font-family: "clasher";
 }
 
 section{
