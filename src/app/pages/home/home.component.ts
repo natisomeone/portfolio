@@ -5,9 +5,10 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-    <p>
-      home works!
-    </p>
+    <div class="w-full h-full flex flex-col">
+      <!-- HERO SECTION -->
+       
+    </div>
   `,
   styles: ``
 })
