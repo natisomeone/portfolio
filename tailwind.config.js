@@ -5,7 +5,8 @@ const primaryColors = {
 }
 
 const surfaceColors = {
-  'surface': '#fafafa'
+  'surface': '#ffffff',
+  'surface-50': '#fafafa'
 }
 
 const colors = {
