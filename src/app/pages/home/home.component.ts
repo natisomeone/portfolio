@@ -4,6 +4,8 @@ import { InfoSectionComponent } from './sections/info-section/info-section.compo
 import { ProjectsSectionComponent } from './sections/projects-section/projects-section.component';
 import { AboutSectionComponent } from './sections/about-section/about-section.component';
 import { TechSectionComponent } from "./sections/tech-section/tech-section.component";
+import { ProcessesSectionComponent } from "./sections/processes-section/processes-section.component";
+import { FooterComponent } from "../../components/footer/footer.component";
 
 @Component({
   selector: 'app-home',
@@ -13,7 +15,9 @@ import { TechSectionComponent } from "./sections/tech-section/tech-section.compo
     InfoSectionComponent,
     ProjectsSectionComponent,
     AboutSectionComponent,
-    TechSectionComponent
+    TechSectionComponent,
+    ProcessesSectionComponent,
+    FooterComponent
 ],
   template: `
     <div class="w-full h-full flex flex-col">
@@ -25,8 +29,12 @@ import { TechSectionComponent } from "./sections/tech-section/tech-section.compo
       <app-projects-section />
       <!-- ABOUT SECTION -->
       <app-about-section />
+      <!-- PROCESSES SECTION -->
+       <app-processes-section />
       <!-- TECH SECTION -->
       <app-tech-section />
+      <!-- Footer -->
+       <app-footer />
     </div>
   `,
   styles: ``,

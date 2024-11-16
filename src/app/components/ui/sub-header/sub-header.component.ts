@@ -5,7 +5,7 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-    <p class="text-xs uppercase text-primary/70 mb-5">{{ title }}</p>
+    <p class="text-[10px] font-medium uppercase text-primary/70 mb-5">{{ title }}</p>
   `,
   styles: ``,
 })

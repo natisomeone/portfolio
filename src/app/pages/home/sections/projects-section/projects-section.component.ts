@@ -12,7 +12,7 @@ import { HeaderComponent } from '../../../../components/ui/header/header.compone
       <h2
         class="text-[26em] uppercase text-center font-medium tracking-tighter header"
       >
-        W<span class="uppercase header italic">o</span>&nbsp;rk
+        W<span class="uppercase tracking-tighter header italic">o</span>&nbsp;rk
       </h2>
     </section>
   `,
