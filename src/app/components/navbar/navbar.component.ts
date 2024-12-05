@@ -5,14 +5,15 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-    <nav class="w-full px-10 py-7 flex items-center justify-between">
-      <p class="font-bold text-primary/80 leading-tight uppercase text-sm nav_header">
-        Nathan.
+    <nav class="w-full pl-5 pr-10 py-7 flex items-center justify-between">
+      <p class="text-xs leading-tight">Open for any <br> collaborations or offers</p>
+      <p class="text-center leading-tight text-xs">
+        Hello my name is <br>Nathan.
       </p>
       <!-- <p class=" text-primary/70 leading-3 text-sm">Frontend Developer</p> -->
 
       <a href="#">
-        <p>natisomeone#gmail.com</p>
+        <p class="text-xs text-end leading-tight">Web Designer & <br> Developer</p>
       </a>
     </nav>
   `,

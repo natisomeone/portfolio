@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: "Clash";
-  src: url('./assets/fonts/NibPro-Regular.ttf');
+  src: url('./assets/fonts/Satoshi_Complete/Fonts/TTF/Satoshi-Variable.ttf');
 }
 
 @font-face {
@@ -24,6 +24,10 @@
   font-family: "Satoshi", sans-serif;
 }
 
+::-webkit-scrollbar{
+  width: 0px;
+}
+
 body{
   position: relative;
   width: 100%;
@@ -32,6 +36,11 @@ body{
   max-width: 1500px;
   border-left: 1px solid #0a0a0a;
   border-right: 1px solid #0a0a0a;
+}
+
+.active{
+  background: #242528;
+  color: #ffffff;
 }
 
 .header{
