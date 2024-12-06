@@ -5,14 +5,15 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-    <button class="flex items-center justify-center w-40 p-2 rounded-2xl my-4 bg-primary h-12">
-      <span class="text-white">{{content}}</span>
+    <button
+      class="py-5 px-10 border hover:text-white transition overflow-hidden ease-in-out duration-300 relative group rounded-full mx-2 cursor-pointer"
+    >
+      <span class="font-medium tracking-tight">{{ content }}</span>
+      <div class="absolute bottom-0 left-0 w-full rounded-t-full transition-all duration-300 -z-10 h-0 bg-surface-accent group-hover:h-28"></div>
     </button>
   `,
-  styles: ``
+  styles: ``,
 })
 export class ButtonComponent {
-  @Input() content: string = ''
-  @Input() width: 'w-28' | 'w-32' | 'w-36' | 'w-40' | 'w-44' | 'w-48' = 'w-28'
-
+  @Input() content: string = '';
 }

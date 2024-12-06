@@ -5,51 +5,14 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-    <div class="w-full">
-      <ul class="w-full">
-        <li
-          class="w-full flex items-center justify-between border-b border-primary px-8 h-36"
-        >
-          <p
-            class="font-medium uppercase text-8xl header pt-6 tracking-tighter"
-          >
-            Website
-          </p>
-          <p class="flex flex-col max-w-[400px] text-primary/90">
-            <span class="mb-1"> ● </span>Focused on creating visually stunning
-            interfaces and exceptional user experiences. Every click is crafted
-            for user-friendly, efficient, and meaningful products.
-          </p>
-        </li>
-        <li
-          class="w-full flex items-center justify-between border-b border-primary px-8 h-36"
-        >
-          <p class="flex flex-col max-w-[400px] text-primary/90">
-            <span class="mb-1"> ● </span>Focused on creating visually stunning
-            interfaces and exceptional user experiences. Every click is crafted
-            for user-friendly, efficient, and meaningful products.
-          </p>
-          <p
-            class="font-medium uppercase text-8xl pt-5 header tracking-tighter"
-          >
-            Design &
-          </p>
-        </li>
-        <li
-          class="w-full flex items-center justify-between border-b border-primary px-8 h-36"
-        >
-          <p
-            class="font-medium uppercase text-8xl pt-6 header tracking-tighter"
-          >
-            Development
-          </p>
-          <p class="flex flex-col max-w-[400px] text-primary/90">
-            <span class="mb-1"> ● </span>Focused on creating visually stunning
-            interfaces and exceptional user experiences. Every click is crafted
-            for user-friendly, efficient, and meaningful products.
-          </p>
-        </li>
-      </ul>
+    <div class="w-full pt-32 flex justify-center">
+      <div class="h-44 w-96">
+        <img src="" class="w-full h-full object-cover" />
+      </div>
+      <p class="max-w-[400px] ml-24">
+        I build creative, scalable and maintainable web apps using modern
+        frameworks like <span class="font-medium text-primary">Angular</span> and <span class="font-medium text-primary">Next JS</span>.
+      </p>
     </div>
   `,
   styles: ``,

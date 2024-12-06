@@ -13,7 +13,7 @@ import { Component } from '@angular/core';
       <!-- <p class=" text-primary/70 leading-3 text-sm">Frontend Developer</p> -->
 
       <a href="#">
-        <p class="text-xs text-end leading-tight">Web Designer & <br> Developer</p>
+        <p class="text-xs text-end leading-tight">Web Designer <br> Developer</p>
       </a>
     </nav>
   `,

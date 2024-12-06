@@ -8,6 +8,7 @@ const surfaceColors = {
   surface: "#ffffff",
   "surface-50": "#fafafa",
   "surface-dark": "#1c1d20",
+  "surface-accent": '#455ce9'
 };
 
 const colors = {

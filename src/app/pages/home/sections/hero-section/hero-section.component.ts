@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   imports: [NgClass],
   template: `
     <section
-      class="flex flex-col h-auto justify-end items-center pb-10 border-b border-primary"
+      class="flex flex-col h-auto justify-end items-center pb-10 border-b"
     >
       <div class="w-auto mt-12">
         <ul class="flex items-center">
@@ -15,23 +15,24 @@ import { Component } from '@angular/core';
           <li
             (click)="selectTab(tab.id)"
             [ngClass]="{ active: selectedTab === tab.id }"
-            class="py-3 px-6 border rounded-full mx-2 cursor-pointer"
+            class="py-4 px-6 border hover:text-white transition overflow-hidden ease-in-out duration-300 relative group rounded-full mx-2 cursor-pointer"
           >
             {{ tab.label }}
+            <div class="absolute bottom-0 left-0 w-full rounded-t-full transition-all duration-300 -z-10 h-0 bg-surface-accent group-hover:h-24"></div>
           </li>
           }
         </ul>
       </div>
       @switch (selectedTab) { @case (tabs[0].id) {
       <h1
-        class="text-[7em] mt-16 text-primary text-center font-medium header leading-[100px] tracking-tighter"
+        class="text-[7em] mt-16 capitalize text-primary text-center font-medium header leading-[100px] tracking-tighter"
       >
-        I design and code <br />
+        I design and &lbrace;code&rbrace; <br />
         modern websites.
       </h1>
       } @case (tabs[1].id) {
       <h1
-        class="text-[7em] mt-16 text-primary text-center font-medium header leading-[100px] tracking-tighter"
+        class="text-[7em] mt-16 capitalize text-primary text-center font-medium header leading-[100px] tracking-tighter"
       >
         Designing and <br />
         Developing modern <br />
@@ -42,7 +43,7 @@ import { Component } from '@angular/core';
       <h1
         class="text-[7em] mt-16 text-primary text-center font-medium header leading-[100px] tracking-tighter"
       >
-        Design + Clean Code <br />+ Scalable Architecture <br />+
+        Design + Clean &lbrace;Code&rbrace;<br />+ Scalable Architecture <br />+
         Maintainability
         <hr
           class="mt-8 mb-4 border-primary mx-auto w-[900px] text-center border-2"
