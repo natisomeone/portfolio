@@ -5,15 +5,24 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-    <div class="w-full pt-32 flex justify-center">
-      <div class="h-44 w-96">
-        <img src="" class="w-full h-full object-cover" />
-      </div>
-      <p class="max-w-[400px] ml-24">
-        I build creative, scalable and maintainable web apps using modern
-        frameworks like <span class="font-medium text-primary">Angular</span> and <span class="font-medium text-primary">Next JS</span>.
+    <section
+      class="sm:py-32 sm:px-5 md:p-32 flex relative items-center justify-between"
+    >
+      <p
+        class="max-w-[280px] text-start leading-5 text-xs uppercase"
+      >
+        I'm a web designer and <br /> developer
+        with expertise in <br /> Angular and
+        NExt JS.
       </p>
-    </div>
+      <p
+        class="max-w-[280px] text-end leading-5 text-xs uppercase"
+      >
+        passionate about creating <br />
+        unforgettable and beautiful<br /> digital
+        experiences.
+      </p>
+    </section>
   `,
   styles: ``,
 })

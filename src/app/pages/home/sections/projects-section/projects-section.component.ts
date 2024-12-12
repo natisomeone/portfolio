@@ -9,7 +9,7 @@ import { ButtonComponent } from "../../../../components/ui/button/button.compone
   standalone: true,
   imports: [ButtonComponent],
   template: `
-    <section class="flex flex-col items-center py-36">
+    <section class="flex flex-col items-center pb-36">
       <div class="flex w-full px-20 flex-col mb-12">
         <h2 class="text-xs text-primary/50 uppercase ml-24 font-medium">Recent Work</h2>
         <ul class="w-full border-t mt-10">
@@ -26,7 +26,7 @@ import { ButtonComponent } from "../../../../components/ui/button/button.compone
           }
         </ul>
       </div>
-      <app-button [content]="'More Work'"/>
+      <app-button [label]="'More Work'"/>
     </section>
   `,
   styles: ``,

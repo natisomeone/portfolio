@@ -18,7 +18,7 @@ import { Component } from '@angular/core';
             class="py-4 px-6 border hover:text-white transition overflow-hidden ease-in-out duration-300 relative group rounded-full mx-2 cursor-pointer"
           >
             {{ tab.label }}
-            <div class="absolute bottom-0 left-0 w-full rounded-t-full transition-all duration-300 -z-10 h-0 bg-surface-accent group-hover:h-24"></div>
+            <div class="absolute -bottom-28 group-hover:bottom-0 left-0 w-full rounded-t-full transition-all duration-300 -z-10 bg-surface-accent h-24"></div>
           </li>
           }
         </ul>
@@ -34,10 +34,7 @@ import { Component } from '@angular/core';
       <h1
         class="text-[7em] mt-16 capitalize text-primary text-center font-medium header leading-[100px] tracking-tighter"
       >
-        Designing and <br />
-        Developing modern <br />
-        websites since <br />
-        2019.
+        Making Good Stuff <br> Since 2019.
       </h1>
       } @case (tabs[2].id) {
       <h1
