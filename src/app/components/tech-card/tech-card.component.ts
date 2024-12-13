@@ -5,7 +5,7 @@ export interface StackInterface {
   name: string;
   img: string;
   definition: string;
-  background: string
+  background: string;
 }
 
 @Component({
@@ -21,7 +21,7 @@ export interface StackInterface {
         class="w-full relative group rounded-xl p-2 h-44 bg-surface-card flex flex-col items-center justify-center"
       >
         <div
-        [ngClass]="stack.background"
+          [ngClass]="stack.background"
           class="h-10 w-10 opacity-0 group-hover:opacity-100 p-1 scale-0 group-hover:scale-100 transition-all duration-300 absolute top-4 left-4 bg-surface-dark overflow-hidden rounded-lg"
         >
           <img [src]="stack.img" class="w-full h-full object-contain" />
