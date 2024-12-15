@@ -46,11 +46,12 @@ import { TechCardComponent } from '../../components/tech-card/tech-card.componen
             <h2 class="text-3xl my-4 tracking-tighter">
               {{ service.package_name }}
             </h2>
-            <p class="leading-7">{{service.package_description}}</p>
+            <p class="leading-7">{{ service.package_description }}</p>
           </div>
           }
         </div>
       </section>
+
       <!-- Tech Stack Section -->
       <section
         class="min-h-[100vh] py-12 bg-surface-dark border-b border-white/20"
@@ -63,12 +64,47 @@ import { TechCardComponent } from '../../components/tech-card/tech-card.componen
         <hr class="border border-white/10" />
         <app-tech-card [stacks]="tech_stacks" />
       </section>
+
+      <!-- Hobbies  -->
+      <section class="py-20 px-4 md:px-20">
+        <h1 class="text-7xl tracking-tighter font-medium text-primary">
+          Out of work, I spend <br />
+          my time...
+        </h1>
+        <div class="w-full flex flex-col mt-32">
+          @for (hobby of hobbies; track $index) {
+          <div class="w-full flex py-5 h-72 rounded-2xl border mb-12">
+            <div class="w-1/2 border-r h-full">
+              <div class="w-full flex items-center justify-center">
+                <img
+                  src=""
+                  class="rounded-xl w-32 h-32 mt-4 -mr-10 -rotate-12"
+                />
+                <img src="" class="rounded-xl w-32 h-32 rotate-2 z-10" />
+                <img
+                  src=""
+                  class="rounded-xl w-32 h-32 mt-32 -ml-40 -rotate-3"
+                />
+              </div>
+            </div>
+            <div class="w-1/2 h-full pt-5 pl-12 flex flex-col justify-center">
+              <h3 class="text-primary text-3xl tracking-tight font-medium">
+                {{hobby.name}}
+              </h3>
+            </div>
+          </div>
+
+          }
+        </div>
+      </section>
+      
       <app-footer />
     </div>
   `,
   styles: ``,
 })
 export class AboutComponent {
+  // Package Array  //
   services = [
     {
       package_number: '01',
@@ -80,19 +116,19 @@ export class AboutComponent {
     {
       package_number: '02',
       package_name: 'Development',
-      package_description:
-        `I build creative, scalable and maintainable web and web applications.
+      package_description: `I build creative, scalable and maintainable web and web applications.
         (Using code to achieve the development goal of any given design.)`,
     },
     {
       package_number: '03',
       package_name: 'The full package',
-      package_description: `A complete website from concept to launch. With a solid design
-          track and also in building web applications. You can count on me to deliver the best
+      package_description: `A complete website from concept to launch. With my experience in web design
+         and also in building web applications. You can count on me to deliver the best
           outcome for your business.`,
     },
   ];
 
+  // Tech Stack Array //
   tech_stacks = [
     {
       img: '../../../assets/tech/figma.png',
@@ -183,6 +219,25 @@ export class AboutComponent {
       name: 'Dev-Tools',
       definition: 'Inspection tool',
       background: '',
+    },
+  ];
+
+  hobbies = [
+    {
+      name: 'Playing Chess',
+      phrases: '',
+    },
+    {
+      name: 'Calligraphy',
+      phrases: '',
+    },
+    {
+      name: 'Reading Books',
+      phrases: '',
+    },
+    {
+      name: 'Art',
+      phrases: '',
     },
   ];
 }
