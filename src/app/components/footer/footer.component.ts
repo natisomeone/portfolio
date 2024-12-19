@@ -22,6 +22,7 @@ import { ButtonComponent } from '../ui/button/button.component';
           </p>
         </div>
         <app-button
+        routerLink="/contact"
           [label]="'Get In Touch'"
           [borderColor]="'border-white/10'"
           [textColor]="'text-white'"
@@ -42,7 +43,7 @@ import { ButtonComponent } from '../ui/button/button.component';
           </ul>
         </div>
         <div class="flex flex-col">
-          <div class="flex flex-col mb-8 items-start">
+          <!-- <div class="flex flex-col mb-8 items-start">
             <h4 class="text-[10px] uppercase font-medium text-white/40 mb-4">
               Website Links
             </h4>
@@ -56,7 +57,7 @@ import { ButtonComponent } from '../ui/button/button.component';
               </li>
               }
             </ul>
-          </div>
+          </div> -->
           <div>
             <h4 class="text-[10px] uppercase font-medium text-white/40 mb-4">
               Socials

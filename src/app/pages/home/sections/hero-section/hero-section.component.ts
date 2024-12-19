@@ -15,7 +15,7 @@ import { Component } from '@angular/core';
           <li
             (click)="selectTab(tab.id)"
             [ngClass]="{ active: selectedTab === tab.id }"
-            class="py-4 px-6 border hover:text-white transition overflow-hidden ease-in-out duration-300 relative group rounded-full mx-2 cursor-pointer"
+            class="py-5 px-8 border hover:text-white transition overflow-hidden ease-in-out duration-300 relative group rounded-full mx-2 cursor-pointer"
           >
             {{ tab.label }}
             <div class="absolute -bottom-28 group-hover:bottom-0 left-0 w-full rounded-t-full transition-all duration-300 -z-10 bg-surface-accent h-24"></div>
