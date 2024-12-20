@@ -77,8 +77,8 @@ export class BenefitsSectionComponent {
   solutions = [
     {
       number: '01',
-      title: 'Accelerated Time-to-Market',
-      description: ` Modern approaches streamline development, enabling timely launches with less pressure.`,
+      title: 'Flexible Web Design',
+      description: `Adaptive designs allow for seamless feature integration and business adaptability, ensuring a unified presence.`,
     },
     {
       number: '02',
@@ -87,8 +87,8 @@ export class BenefitsSectionComponent {
     },
     {
       number: '03',
-      title: 'Flexible Web Design',
-      description: `Adaptive designs allow for seamless feature integration and business adaptability, ensuring a unified presence.`,
+      title: 'Accelerated Time-to-Market',
+      description: ` Modern approaches streamline development, enabling timely launches with less pressure.`,
     },
     {
       number: '04',

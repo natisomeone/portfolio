@@ -10,8 +10,9 @@ import { Component, Input } from '@angular/core';
       <p class="text-center leading-tight text-xs {{textColor}}">
         Hello my name is <br>Nathan.
       </p>
-      <a href="#">
-        <p class="text-xs text-end leading-tight {{textColor}}">Web Designer <br> Developer</p>
+      <a href="#" class="flex items-center">
+        <p class="text-xs text-end leading-tight {{textColor}}">Interactive <br> guide</p>
+        <i class="fa-solid fa-arrow-up ml-2 h-8 w-8 text-xs flex items-center justify-center rounded-full bg-surface-50"></i>
       </a>
     </nav>
   `,

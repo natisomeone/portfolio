@@ -8,8 +8,8 @@ import { MenuBtnComponent } from './components/menu-btn/menu-btn.component';
   standalone: true,
   imports: [RouterOutlet, MenuComponent, MenuBtnComponent],
   template: ` <main class="w-full h-full relative overflow-x-hidden">
-    <app-menu [isMenuVisible]="isMenuVisible"/>
-    <app-menu-btn [toggleMenu]="toggleVisibility"/>
+    <!-- <app-menu [isMenuVisible]="isMenuVisible"/> -->
+    <!-- <app-menu-btn [toggleMenu]="toggleVisibility"/> -->
     <router-outlet></router-outlet>
   </main>`,
 })
